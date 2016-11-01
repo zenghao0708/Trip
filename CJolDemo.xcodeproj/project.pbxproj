@@ -137,15 +137,15 @@
 		5DCC054F1DC86F7C006B48BB /* OnBoarding */ = {
 			isa = PBXGroup;
 			children = (
-				5DF7DE0B17F2C362004B3291 /* RegisterViewController.h */,
-				5DF7DE0C17F2C362004B3291 /* RegisterViewController.m */,
 				5DF7DE0317F2C1D3004B3291 /* LoginViewController.h */,
 				5DF7DE0417F2C1D3004B3291 /* LoginViewController.m */,
+				5DF7DE0B17F2C362004B3291 /* RegisterViewController.h */,
+				5DF7DE0C17F2C362004B3291 /* RegisterViewController.m */,
 				5DB620BB1821F98C0018F4BB /* SignInViewController.h */,
 				5DB620BC1821F98C0018F4BB /* SignInViewController.m */,
 				5DF1883C1823802000BD36AF /* SignInViewController.xib */,
 			);
-			name = OnBoarding;
+			path = OnBoarding;
 			sourceTree = "<group>";
 		};
 		5DCC05501DC86FA6006B48BB /* Group */ = {
@@ -156,7 +156,7 @@
 				5D6CAC6C181F901E00132A81 /* GroupManagerViewController.h */,
 				5D6CAC6D181F901E00132A81 /* GroupManagerViewController.m */,
 			);
-			name = Group;
+			path = Group;
 			sourceTree = "<group>";
 		};
 		5DCC05511DC86FB4006B48BB /* Plan */ = {
@@ -169,7 +169,7 @@
 				5D6CAC6F181F9DDA00132A81 /* PlanViewController.h */,
 				5D6CAC70181F9DDA00132A81 /* PlanViewController.m */,
 			);
-			name = Plan;
+			path = Plan;
 			sourceTree = "<group>";
 		};
 		5DCC05521DC86FD6006B48BB /* Model */ = {
@@ -178,7 +178,7 @@
 				5DEC8F7D1827B21000CF8C48 /* ModalAlert.h */,
 				5DEC8F7E1827B21000CF8C48 /* ModalAlert.m */,
 			);
-			name = Model;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		5DCC05531DC87024006B48BB /* Helper */ = {
@@ -187,7 +187,7 @@
 				5DEC8F74182752EF00CF8C48 /* TripManager.h */,
 				5DEC8F75182752EF00CF8C48 /* TripManager.m */,
 			);
-			name = Helper;
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		5DF7DDDF17F2C1D3004B3291 = {
@@ -228,18 +228,18 @@
 			isa = PBXGroup;
 			children = (
 				5DFBA3F2182B8E5D00F37F39 /* EGOTableViewPullRefresh */,
+				5DCC05501DC86FA6006B48BB /* Group */,
+				5DCC05531DC87024006B48BB /* Helper */,
+				5DCC05521DC86FD6006B48BB /* Model */,
+				5DCC054F1DC86F7C006B48BB /* OnBoarding */,
+				5DCC05511DC86FB4006B48BB /* Plan */,
 				5D2B24A01DC8494800A605BE /* Resource */,
 				5DF7DDF517F2C1D3004B3291 /* Supporting Files */,
 				5DF7DDFD17F2C1D3004B3291 /* AppDelegate.h */,
 				5DF7DDFE17F2C1D3004B3291 /* AppDelegate.m */,
-				5DCC05501DC86FA6006B48BB /* Group */,
 				5D2B24A21DC84C0100A605BE /* MainStoryboard.storyboard */,
-				5DCC05521DC86FD6006B48BB /* Model */,
-				5DCC05511DC86FB4006B48BB /* Plan */,
 				5D253260182A63A400282BF9 /* ScheduleViewController.h */,
 				5D253261182A63A500282BF9 /* ScheduleViewController.m */,
-				5DCC054F1DC86F7C006B48BB /* OnBoarding */,
-				5DCC05531DC87024006B48BB /* Helper */,
 			);
 			path = CJolDemo;
 			sourceTree = "<group>";
