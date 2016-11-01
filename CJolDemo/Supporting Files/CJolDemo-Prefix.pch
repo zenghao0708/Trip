@@ -1,0 +1,62 @@
+//
+// Prefix header for all source files of the 'CJolDemo' target in the 'CJolDemo' project
+//
+
+#import <Availability.h>
+
+#ifndef __IPHONE_5_0
+#warning "This project uses features only available in iOS SDK 5.0 and later."
+#endif
+
+#ifdef __OBJC__
+    #import <UIKit/UIKit.h>
+    #import <Foundation/Foundation.h>
+#endif
+
+#import "TripManager.h"
+
+
+
+#define ALTER_MINITER           15
+#define PLAN_DURATION_MINUTE    5
+#define AUTO_UPDATE_MINUTE      3
+
+//用于行程表
+#define PLAN_ALERT_BODY         @"需要签到了"
+
+#define REMIND_ALERT_BODY       @"请查看最新行程状态"
+
+#define ALERT_RING              @"alarm.wav"
+
+#define PLAN_TITLE              @"title"                    //string
+#define PLAN_DESCRIPTION        @"detail"                   //string
+#define PLAN_DATE               @"start_time"               //date
+#define PLAN_ID                 @"info_id"                  //string
+#define PLAN_WARNNING           @"b_warning"                //string            字典里面不能使用 int / bool
+#define PLAN_FINALTIME          @"final_time"               //date
+
+#define WARNNING_ON             @"1"
+#define WARNNING_OFF            @"0"
+
+//用于得到登陆信息的宏
+#define USER_ID                 [[[TripManager shareInstance] loginUser]  objectForKey:@"user_id"]
+#define USER_ACCOUNT            [[[TripManager shareInstance] loginUser]  objectForKey:@"account"]
+#define USER_PSW                [[[TripManager shareInstance] loginUser]  objectForKey:@"pw"]
+#define USER_PHONE              [[[TripManager shareInstance] loginUser]  objectForKey:@"phone"]
+#define USER_PRIVILIEGE         [[[TripManager shareInstance] loginUser]  objectForKey:@"priviliege"]           //管理员为0，普通用户为1
+
+//用于行程签到状态
+#define PLANSTATUS_USERID       @"user_id"                   //string
+#define PLANSTATUS_ACCOUNT      @"account"                   //string
+#define PLANSTATUS_PHONE        @"phone"                     //string   
+#define PLANSTATUS_STATUS       @"status"                    //string
+#define PLANSTATUS_DETAIL       @"detail"                    //string
+#define PLANSTATUS_FINALTIME    @"final_time"                //string
+
+#define LOGIN_USERNMAE @"username"
+#define LOGIN_PASSWORD @"password"
+
+
+#define INT_TO_STRIG(x)         [NSString stringWithFormat:@"%d",x]
+
+#define LOGIN_INFO_FILE_PATH [NSHomeDirectory() stringByAppendingString:@"/Documents/logininfo.xml"]
